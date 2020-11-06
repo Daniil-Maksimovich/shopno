@@ -86,11 +86,12 @@ h2 {
 
 h3 {
   font-family: 'Merriweather', serif;
+  text-transform: uppercase;
 }
 
 a {
-  -webkit-transition: all .1s linear;
-  transition: all .1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 a:hover {
@@ -141,8 +142,8 @@ section {
 
 .menu .menu-button:hover {
   background-color: #bbbbbb;
-  -webkit-transition: all .1s linear;
-  transition: all .1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .menu .menu-button span {
@@ -154,8 +155,8 @@ section {
   margin: 5px auto;
   background-color: #606061;
   border-radius: 5px;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .menu .menu__nav {
@@ -163,8 +164,8 @@ section {
   top: 0;
   right: -150%;
   z-index: 100;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   background-color: #eff0f2;
 }
 
@@ -188,8 +189,8 @@ section {
   height: 4px;
   width: 0;
   background-color: #505050;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .menu .menu__nav__wrapper a:hover:after {
@@ -205,11 +206,11 @@ section {
   z-index: 80;
   display: none;
   background-color: #000;
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .menu.active .menu__top {
-  margin: 15px auto 0 auto;
+  margin: 15px auto 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -220,7 +221,7 @@ section {
 }
 
 .menu.active .menu__bottom {
-  margin: -4px auto 0 auto;
+  margin: -4px auto 0;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -252,8 +253,8 @@ section {
   font-size: 18px;
   padding: 12px 35px;
   border: 1px solid #505050;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .intro__button a:hover {
@@ -282,10 +283,13 @@ section {
           justify-content: space-between;
 }
 
-.about__content .slider,
-.about__content .about__info {
-  width: 50%;
+.about__content .about__info,
+.about__content .slider {
   line-height: 1.5em;
+}
+
+.about__content .about__info {
+  margin-left: 100px;
 }
 
 .slider__background {
@@ -306,9 +310,9 @@ section {
 }
 
 .slider__buttons {
-  width: 77%;
+  width: 100%;
   text-align: center;
-  margin: 70px 0;
+  margin-top: 100px;
 }
 
 .slider__buttons span {
@@ -347,8 +351,8 @@ section {
   position: absolute;
   left: 0;
   line-height: 1.7em;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .services .img__block .img__content h3,
@@ -360,8 +364,8 @@ section {
 .services .img__block .img__content a,
 .services .img__block .img__moreinfo a {
   color: #f9fbfb;
-  -webkit-transition: all .1s linear;
-  transition: all .1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .services .img__block .img__content a:hover,
@@ -373,7 +377,7 @@ section {
 .services .img__block .img__content {
   height: 99%;
   top: 0;
-  padding: 140px 70px 0 70px;
+  padding: 140px 70px 0;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -395,13 +399,13 @@ section {
 
 .services .img__block .img__moreinfo i {
   font-size: 35px;
-  font-weight: 00;
+  font-weight: 0;
   position: relative;
   -webkit-transform: rotate(0.25turn);
           transform: rotate(0.25turn);
   color: #44948d;
-  -webkit-transition: all .1s linear;
-  transition: all .1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
   cursor: pointer;
 }
 
@@ -453,8 +457,8 @@ section {
           box-shadow: 3px 7px 7px 1px #929292;
   background-color: #6ef4e9;
   opacity: 0;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .team__content .img__block .img__content:after {
@@ -468,13 +472,6 @@ section {
   border-bottom-color: #6ef4e9;
   border-top: 0;
   margin-top: -12px;
-}
-
-.team__content .img__block .img__content h3 span {
-  font-size: 15px;
-  color: #767776;
-  font-style: italic;
-  font-weight: normal;
 }
 
 .team__content .img__block .img__content a {
@@ -491,11 +488,227 @@ section {
   opacity: 1;
 }
 
-.reviews__content .slider {
-  width: 40%;
+h3 span {
+  font-size: 15px;
+  color: #767776;
+  font-style: italic;
+  font-weight: normal;
 }
 
-.reviews__content .reviews__info {
-  width: 60%;
+.reviews {
+  background-color: #f9fbfb;
+}
+
+.reviews__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__content .slider__background {
+  height: 350px;
+}
+
+.reviews__content .slider__buttons {
+  margin-top: 70px;
+}
+
+.reviews__info__block {
+  height: 350px;
+  width: 650px;
+  text-align: center;
+  padding: 90px 80px 10px;
+  background-color: #eaebed;
+}
+
+.reviews__info__block h3 {
+  color: #191919;
+  letter-spacing: 1px;
+}
+
+.reviews__info__block h3 span {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.reviews__info__block div {
+  margin-top: 35px;
+}
+
+.reviews__info__block div i {
+  font-size: 18px;
+  margin: 0 5px;
+  color: #f2da3b;
+}
+
+.reviews__info__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 28px;
+  float: right;
+}
+
+.reviews__info__buttons .prev {
+  background-color: #fff;
+}
+
+.reviews__info__buttons .next {
+  background-color: #71f6eb;
+  margin-left: 28px;
+}
+
+.reviews__info__buttons span {
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-box-shadow: 3px 3px 6px 1px #e7e7e7;
+          box-shadow: 3px 3px 6px 1px #e7e7e7;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.reviews__info__buttons span:hover {
+  -webkit-filter: brightness(0.95);
+          filter: brightness(0.95);
+}
+
+.contact {
+  padding: 110px 0;
+  background: url("../img/contact_back.png") no-repeat center/cover;
+}
+
+.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__address,
+.contact__form {
+  height: 470px;
+  background-color: rgba(50, 76, 90, 0.9);
+  -webkit-box-shadow: 2px 2px 10px #bebebe;
+          box-shadow: 2px 2px 10px #bebebe;
+}
+
+.contact__form {
+  width: 600px;
+  padding: 45px 35px;
+}
+
+.contact__form label span {
+  color: #bebebe;
+}
+
+.contact__form label input,
+.contact__form label textarea {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid rgba(190, 190, 190, 0.4);
+}
+
+.contact__form label input {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.contact__form label textarea {
+  height: 80px;
+  margin-top: 10px;
+  resize: none;
+}
+
+.contact__form input[type="submit"] {
+  width: auto;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: 33px;
+  padding: 20px 40px;
+  border-radius: 2px;
+  color: #214744;
+  background-color: #6eeee4;
+  border: none;
+  cursor: pointer;
+}
+
+.contact__form input[type="submit"]:hover {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.contact__address {
+  width: 500px;
+  padding: 20px;
+}
+
+.contact__address__links a {
+  display: block;
+  color: #bebebe;
+  margin: 5px;
+}
+
+.contact__location__map {
+  height: 235px;
+}
+
+.contact__location__map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  padding: 90px 0;
+  background-color: #262b2e;
+  color: #d4d5d5;
+  font-weight: 400;
+}
+
+.footer .container {
+  text-align: center;
+}
+
+.footer .container h4 {
+  text-transform: uppercase;
+}
+
+.footer .container div {
+  margin: 30px 0 50px 0;
+}
+
+.footer .container div a {
+  margin: 5px;
+  padding: 14px;
+  background-color: #424648;
+  color: #bbb8b9;
+}
+
+.footer .container div a i {
+  font-size: 22px;
+}
+
+.footer .container div a:first-child {
+  background-color: #6eeee4;
+  color: #070e0d;
 }
 /*# sourceMappingURL=styles.css.map */
