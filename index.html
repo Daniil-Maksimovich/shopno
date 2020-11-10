@@ -2,16 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shopno</title>
         <link rel="shortcut icon" href="./img/head_logo.png" type="image/x-icon">
-        <!-- <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-        -->
-        <link
-            rel="stylesheet"
-            href="./libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./libraries/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/@media.css">
 
         <script src="./scripts/index.js"></script>
     </head>
@@ -29,10 +25,13 @@
                     </div>
                     <nav class="menu__nav">
                         <div class="menu__nav__wrapper">
-                            <a href="#">Home</a>
-                            <a href="#">About us</a>
-                            <a href="#">Portfolio</a>
-                            <a href="#">Contacts</a>
+                            <a data-url="header" href="#">Home</a>
+                            <a data-url="about" href="#">About us</a>
+                            <a data-url="works" href="#">Portfolio</a>
+                            <a data-url="services" href="#">Services</a>
+                            <a data-url="team" href="#">Team</a>
+                            <a data-url="reviews" href="#">Reviews</a>
+                            <a data-url="contact" href="#">Contacts</a>
                         </div>
                     </nav>
                     <div class="menu__overlay"></div>
@@ -117,7 +116,7 @@
                     <p>Lorem ipsum dolor sit amet event landing template</p>
                 </div>
                 <div class="services__content">
-
+                    
                     <div class="img__block active">
                         <img src="./img/service_1.png" alt="service"/>
                         <div class="img__content">
@@ -247,14 +246,13 @@
                     <div class="img__block">
                         <img src="./img/team_1.png" alt="service"/>
                         <div class="img__content">
-                            <h3>Al Rayan
-                                <span>/ UI Designer
+                            <h3>Natali Rayan
+                                <span>/ Project manager
                                 </span>
                             </h3><br/>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, ut.</p>
-                            <br/>
-                            <br/>
-                            <span>
+                            
+                            <div>
                                 <a href="#">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </a>
@@ -267,20 +265,19 @@
                                 <a href="#">
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </a>
-                            </span>
+                            </div>
                         </div>
                     </div>
                     <div class="img__block">
                         <img src="./img/team_2.png" alt="service"/>
                         <div class="img__content">
-                            <h3>Al Rayan
-                                <span>/ UI Designer
+                            <h3>Johan Brown
+                                <span>/ Frontend developer
                                 </span>
                             </h3><br/>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, ut.</p>
-                            <br/>
-                            <br/>
-                            <span>
+                            
+                            <div>
                                 <a href="#">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </a>
@@ -293,7 +290,7 @@
                                 <a href="#">
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </a>
-                            </span>
+                            </div>
                         </div>
                     </div>
                     <div class="img__block">
@@ -304,9 +301,8 @@
                                 </span>
                             </h3><br/>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, ut.</p>
-                            <br/>
-                            <br/>
-                            <span>
+                            
+                            <div>
                                 <a href="#">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </a>
@@ -319,20 +315,19 @@
                                 <a href="#">
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </a>
-                            </span>
+                            </div>
                         </div>
                     </div>
                     <div class="img__block">
                         <img src="./img/team_4.png" alt="service"/>
                         <div class="img__content">
-                            <h3>Al Rayan
-                                <span>/ UI Designer
+                            <h3>Nikola Nix
+                                <span>/ Backend developer
                                 </span>
                             </h3><br/>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, ut.</p>
-                            <br/>
-                            <br/>
-                            <span>
+                            
+                            <div>
                                 <a href="#">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </a>
@@ -345,7 +340,7 @@
                                 <a href="#">
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </a>
-                            </span>
+                            </div>
                         </div>
                     </div>
                     <div class="img__block">
@@ -356,9 +351,8 @@
                                 </span>
                             </h3><br/>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, ut.</p>
-                            <br/>
-                            <br/>
-                            <span>
+                            
+                            <div>
                                 <a href="#">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </a>
@@ -371,20 +365,19 @@
                                 <a href="#">
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </a>
-                            </span>
+                            </div>
                         </div>
                     </div>
                     <div class="img__block">
                         <img src="./img/team_1.png" alt="service"/>
                         <div class="img__content">
-                            <h3>Al Rayan
+                            <h3>Natali Rayan
                                 <span>/ UI Designer
                                 </span>
                             </h3><br/>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, ut.</p>
-                            <br/>
-                            <br/>
-                            <span>
+                            
+                            <div>
                                 <a href="#">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </a>
@@ -397,7 +390,7 @@
                                 <a href="#">
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </a>
-                            </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -422,13 +415,62 @@
                         </div>
                     </div>
                     <div class="reviews__info">
+                                    
                         <div class="reviews__info__block">
+                            <h3>Natali Rayan
+                                <span>
+                                    / Project manager
+                                </span>
+                            </h3><br />
+                            <p>Lorem Ipsum is simply dummy text of the printing and you standard dummy know
+                                that text ever since the 1500s, when an.</p>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="reviews__info__block active">
                             <h3>Al Rayan
                                 <span>
                                     / UI/UX Designer
                                 </span>
-                            </h3><br/>
+                            </h3><br />
                             <p>Lorem Ipsum is simply dummy text of the printing and you standard dummy know
+                                that text ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a type specimen book.</p>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="reviews__info__block">
+                            <h3>Johan Brown
+                                <span>
+                                    / Frontend developer
+                                </span>
+                            </h3><br />
+                            <p>Lorem Ipsum is simply , when an unknown printer took a galley of type
+                                and scrambled it to make a type specimen book.</p>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="reviews__info__block">
+                            <h3>Nikola Nix
+                                <span>
+                                    / Backend developer
+                                </span>
+                            </h3><br />
+                            <p>Lorem Ipsum dummy text of the printing and you standard dummy know
                                 that text ever since the 1500s, when an unknown printer took a galley of type
                                 and scrambled it to make a type specimen book.</p>
                             <div>
@@ -514,7 +556,6 @@
                     <a href="#">
                         <i class="fa fa-futbol-o" aria-hidden="true"></i>
                     </a>
-                    
                 </div>
                 <p>Copyright Maksimovich Daniil, All Rights Reserved</p>
             </div>
